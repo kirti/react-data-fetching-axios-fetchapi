@@ -6,12 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Build Script
 
-docker-compose build dev
+yarn build
 
 # Run test 
 
-docker-compose run test
+yarn test
 
 # Run dev environment 
 
-docker-compose up dev
+yarn start
