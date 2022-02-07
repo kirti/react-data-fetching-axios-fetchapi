@@ -8,9 +8,11 @@ import {
 } from "react-router-dom";
 import PostsWithFetch from './PostsWithFetch'
 import PostsWithAxios from './PostsWithAxios'
+import {ErrorBoundary} from './ErrorBoundary'
 
 function App() {
   return (
+    <ErrorBoundary>
     <Router>
      <div className="App">
       <nav>
@@ -37,6 +39,7 @@ function App() {
       </Switch>
     </div>
   </Router>
+  </ErrorBoundary>
   );
 }
 export default App;

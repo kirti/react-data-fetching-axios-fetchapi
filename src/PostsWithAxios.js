@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './App.css';
 import axios from 'axios'
 
+
 function PostsWithAxios() {
   const [posts, setPosts] = useState( [] );
  
@@ -15,10 +16,11 @@ function PostsWithAxios() {
 
 const useaxiosPosts = posts.map((post)=>{
   return <div>
-              <h3>{post.id}</h3>
-              <h4>{post.title}</h4>
-              <p>{post.body}</p>
-            </div> 
+    {post.name.toUpperCase}
+  <h3>{post.id}</h3>
+  <h4>{post.title}</h4>
+  <p>{post.body}</p>
+</div> 
   })
 
   return (
